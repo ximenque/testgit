@@ -13,11 +13,16 @@
 </head>
 <body>
     <div class="empty"></div>
+    <a href="http://csnr33.vicp.cc/">344</a>
 </body>
 </html>
 <script type="text/javascript" src="../script/api.js"></script>
 <script type="text/javascript">
     apiready = function(){
-        $api.dom('.empty').innerHTML = api.pageParam.name+'页';
+      var version = api.version;
+      var deviceModel = api.deviceModel;
+        $api.dom('.empty').innerHTML = api.pageParam.name+'页!'+version;
+          $api.dom('.deviceModel').innerHTML = deviceModel;
+
     };
 </script>
